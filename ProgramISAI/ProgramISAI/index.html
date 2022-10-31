@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Situs Web ISAI</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src = "logo.png" alt = "logo" width="90" height="90">
+          <a class="navbar-brand" href="#"></a>
+        </div>
+      </nav>
+      <aside class="sidebar">
+        <menu>
+          <ul class="menu-content">
+            <li>
+              <a href="index.html"><i class="fa fa-home"></i> Beranda</a></li>
+            <li>
+              <a href="#"><i class="fa fa-map"></i> <span>Peta</span> <i class="fa fa-angle-down pull-right"></i></a>
+              <ul>
+                <li><a href="">Lahan Pertanian</a></li>
+                <li><a href="">Kategori</a></li>
+                <li><a href="">Calculator Karbon</a></li>
+              </ul>
+            </li>
+            <li><a href="Aboutus.html"><i class="fa fa-heart"></i> <span>Tentang Kami</span></a></li>
+          </ul>
+        </menu>
+      </aside>
+      <section class="content">
+        <div class="inner">
+          <img src="drone.jpg" alt="drone" width="1200" height="400">
+          <p>
+            Welcome to ISAI!
+            
+          </p>
+        </div>
+      </section> 
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    $("menu li > a").click(function(e){
+    $("menu ul ul").slideUp(),$(this).next().is(":visible") || $(this).next().slideDown(),e.stopPropagation()
+    });
+    </script>
+    </body>
+</html>
